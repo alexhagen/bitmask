@@ -53,8 +53,8 @@ class Bitmask(list):
                         bit_str = ''
                     else:
                         bit_str = 'not '
-                    string += f'{bit_str}{column} and'
-            string = string[:-4]
+                    string += f'{bit_str}{column} and '
+            string = string[:-5]
             return string
         else:
             return self.__repr__()
